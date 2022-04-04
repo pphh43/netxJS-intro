@@ -6,13 +6,14 @@
 // 4. 페이지에 추가 데이터 삽입
 // 5. Global CSS 추가
 
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <NavBar />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
